@@ -95,11 +95,59 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 90px;
 
     &--img {
         height: auto;
         width: 100%;
     }
   }
+}
+
+.offers {
+    margin-top: 70px;
+
+    &__more {
+        border: 1px solid red;
+        margin-bottom: 60px;
+        width: 600px;
+
+        &--title {
+            font-size: 2rem;
+            font-weight: 550;
+        }
+
+        &--desc {
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+    }
+
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    &__sub-block {
+
+        & img {
+            width: 60px;
+        }
+    }
+
+    &--title {
+        font-weight: 550;
+    }
+
+    &__service {
+        list-style: none;
+        padding: 0;
+
+        &--single {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+    }
+
 }
