@@ -53,6 +53,16 @@ img {
             text-align: justify;
             ///padding-right: 10px;
         }
+
+        &--link {
+            border-bottom: 1px solid #00baba;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        &--link:hover {
+            background: rgba(0, 186, 186, 0.1);
+        }
     }
 }
 
@@ -226,4 +236,79 @@ img {
         margin-left: 25px;
         text-decoration: none;
     }
+}
+
+
+.contact {
+    &__header--title {
+        font-size: 1.9rem;
+        font-weight: 450;
+        width: 500px;
+
+        & a {
+            border-bottom: 1px solid #00baba;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        & a:hover {
+            background: rgba(0, 186, 186, 0.1);
+        }
+    }
+}
+
+
+.form {
+    margin-bottom: 60px;
+}
+
+.contact__form {
+    //border: 1px solid red;
+    margin-top: 60px;
+    width: 650px;
+}
+
+.contact--submit {
+    background: #00baba;
+    border: 1px solid #00baba;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 550;
+    outline: none;
+    padding: 14px 44px;
+
+}
+
+.form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+    width: 100%;
+}
+
+.form__group {
+    display: grid;
+    margin-bottom: 20px;
+}
+
+.form--label {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.form--input {
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    padding: 10px;
+}
+
+select .form--input {
+    background: none;
+    outline: none;
+}
+
+.form--input:focus {
+    border-bottom: 1px solid red;;
 }
