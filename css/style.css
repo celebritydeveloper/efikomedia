@@ -13,6 +13,10 @@ body {
   padding: 0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -54,13 +58,38 @@ img {
 }
 
 .header__about--link {
-  border-bottom: 1px solid #00baba;
-  color: inherit;
+  border-bottom: 1px solid #ba0000;
   text-decoration: none;
 }
 
 .header__about--link:hover {
-  background: rgba(0, 186, 186, 0.1);
+  background: rgba(186, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.navbar-brand {
+  max-height: 50px;
+  margin-right: 120px;
+  width: 100px;
+}
+
+.navbar-brand--img {
+  width: 100%;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-item {
+  font-size: 1.3rem;
+  padding: 0 20px;
+}
+
+a.nav-link .active--nav {
+  color: red;
 }
 
 .nav {
@@ -71,15 +100,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.nav__logo {
-  max-height: 70px;
-  width: 100px;
-}
-
-.nav__logo--img {
-  width: 100%;
 }
 
 .nav__menu {
@@ -114,6 +134,10 @@ img {
   width: 100%;
 }
 
+.offers--img {
+  width: 60px;
+}
+
 .offers {
   margin-top: 120px;
 }
@@ -131,14 +155,6 @@ img {
 .offers__more--desc {
   font-size: 1.3rem;
   line-height: 1.4;
-}
-
-.offers__block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
 }
 
 .offers__sub-block img {
@@ -160,7 +176,7 @@ img {
 }
 
 .socials {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .socials__more {
@@ -178,20 +194,12 @@ img {
 }
 
 .cta {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(0, 186, 186, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 400px;
-  justify-items: flex-start;
+  background: rgba(0, 186, 186, 0.5);
 }
 
 .cta--btn {
   color: #fff;
-  background: #00baba;
+  background: #ba0000;
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 500;
@@ -201,7 +209,7 @@ img {
 }
 
 .cta__more--title {
-  color: #00baba;
+  color: #ba0000;
   font-size: 2rem;
   font-weight: 550;
 }
@@ -211,6 +219,10 @@ img {
   line-height: 1.5;
   margin-bottom: 2px;
   margin-top: 0;
+}
+
+section.cta {
+  background: rgba(186, 0, 0, 0.2);
 }
 
 .footer {
@@ -246,7 +258,7 @@ img {
 }
 
 .contact__header--title a {
-  border-bottom: 1px solid #00baba;
+  border-bottom: 1px solid #ba0000;
   color: inherit;
   text-decoration: none;
 }
@@ -265,8 +277,8 @@ img {
 }
 
 .contact--submit {
-  background: #00baba;
-  border: 1px solid #00baba;
+  background: #ba0000;
+  border: 1px solid #ba0000;
   color: #fff;
   cursor: pointer;
   font-size: 1.1rem;
